@@ -1,0 +1,264 @@
+/* ===========================
+   Light Mode (Default)
+=========================== */
+
+body {
+  background-color: #ffffff;
+  color: #000000;
+  font-family: sans-serif;
+  transition: background 0.3s, color 0.3s;
+}
+
+.chat-container {
+  max-width: 600px;
+  margin: 80px auto;
+  padding: 20px;
+  background-color: #f2f2f2;
+  border-radius: 8px;
+}
+
+.message.user {
+  background-color: #d1e7dd;
+  color: #000;
+}
+
+.message.bot {
+  background-color: #e2e3e5;
+  color: #000;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* User & Gemini bubbles - Light mode */
+.user-bubble {
+  background-color: #d1e7dd;
+  color: #000;
+  align-self: flex-end;
+}
+
+.gemini-bubble {
+  background-color: #e2e3e5;
+  color: #000;
+  align-self: flex-start;
+}
+
+/* Input + Button shared styles */
+input,
+button {
+  padding: 10px;
+  font-size: 16px;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+
+input {
+  background-color: #fff;
+  color: #000;
+  border-radius: 2rem;
+  border: 1px solid #ccc;
+}
+
+/* Send Button - Light */
+.send-btn {
+  width: 40px;
+  height: 40px;
+  background-color: #fff;
+  color: #000;
+  border: none;
+  border-radius: 100px;
+  cursor: pointer;
+}
+
+.send:hover {
+  background-color: #dfdfdf;
+}
+
+/* Toggle Button */
+#darkModeToggle {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  padding: 8px 12px;
+  background-color: #444;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+/* Chat Area */
+#chat-box {
+  height: 400px;
+  overflow-y: auto;
+  border: 1px solid #f9f9f9;
+  padding: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.chat-bubble {
+  max-width: 75%;
+  padding: 10px;
+  border-radius: 15px;
+  margin: 5px;
+  display: inline-block;
+  word-wrap: break-word;
+}
+
+.chat-bubble ul {
+  padding-left: 20px;
+  margin: 5px 0;
+}
+
+.chat-bubble li {
+  margin-bottom: 6px;
+  line-height: 1.5;
+}
+
+
+/* ===========================
+   Dark Mode
+=========================== */
+
+body.dark-mode {
+  background-color: #121212;
+  color: #e0e0e0;
+}
+
+body.dark-mode .chat-container {
+  background-color: #1e1e1e;
+  border: 1px solid #333;
+}
+
+body.dark-mode .message.user {
+  background-color: #004d40;
+  color: #e0f2f1;
+}
+
+body.dark-mode .message.bot {
+  background-color: #333;
+  color: #fff;
+}
+
+/* Dark Bubbles */
+body.dark-mode .user-bubble {
+  background-color: #00695c;
+  color: #e0f2f1;
+}
+
+body.dark-mode .gemini-bubble {
+  background-color: #2a2a2a;
+  color: #f1f1f1;
+}
+
+/* Dark Inputs */
+body.dark-mode input,
+body.dark-mode input[type="text"] {
+  background-color: #2c2c2c;
+  color: #fff;
+  border: 1px solid #555;
+}
+
+/* Dark Send Button */
+body.dark-mode .send {
+  background-color: #2c2c2c;
+  color: #fff;
+  border: 1px solid #555;
+}
+
+body.dark-mode .send:hover {
+  background-color: #3a3a3a;
+}
+
+/* Dark Toggle Button */
+body.dark-mode #darkModeToggle {
+  background-color: #555;
+  color: #fff;
+}
+/* Dropdown */
+#modelSelect {
+  padding: 8px;
+  margin-top: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  background-color: #fff;
+  color: #000;
+}
+
+body.dark-mode #modelSelect {
+  background-color: #2c2c2c;
+  color: #fff;
+  border: 1px solid #555;
+}
+
+
+/* Responsive Layout */
+@media screen and (max-width: 768px) {
+  .chat-container {
+    margin: 40px 10px;
+    padding: 15px;
+  }
+
+  #modelSelect {
+    top: 60px;
+    right: 10px;
+    width: 90%;
+    font-size: 14px;
+  }
+
+  #darkModeToggle {
+    top: 10px;
+    right: 10px;
+    font-size: 14px;
+    padding: 6px 10px;
+  }
+
+  #chat-box {
+    height: 250px;
+    padding: 8px;
+    font-size: 14px;
+  }
+
+  .chat-bubble {
+    font-size: 14px;
+    max-width: 90%;
+    padding: 8px;
+    border-radius: 12px;
+  }
+
+  input[type="text"] {
+    font-size: 14px;
+    padding: 8px;
+    margin-right: 5px;
+  }
+
+  .send {
+    width: 36px;
+    height: 36px;
+    font-size: 14px;
+  }
+}
+
+/* Extra small screens */
+@media screen and (max-width: 480px) {
+  #chat-box {
+    height: 200px;
+  }
+
+  .chat-container {
+    padding: 10px;
+  }
+
+  .chat-bubble {
+    font-size: 13px;
+  }
+}

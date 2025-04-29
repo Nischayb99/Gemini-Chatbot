@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Gemini Chat</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <button id="darkModeToggle">🌙 Dark Mode</button>
+  <div class="chat-container">
+    <div id="chat-box"></div>
+    <!-- Model Selection Dropdown -->
+    <label for="modelSelect">Select Model:</label>
+    <select id="modelSelect">
+      <option value="models/gemini-1.5-pro">Gemini 1.5 Pro</option>
+      <option value="models/gemini-1.5-flash">Gemini 1.5 Flash</option>
+      <option value="models/gemini-2.0-flash">Gemini 2.0 Flash</option>
+    </select>
+    <div style="display: flex; align-items: center;">
+      <input id="user-input" type="text" placeholder="Ask something..." />
+      <button class="send-btn" onclick="sendMessage()"><i class="fa-solid fa-arrow-up"></i></button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
