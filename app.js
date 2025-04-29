@@ -35,3 +35,5 @@ app.post("/chat", async (req, res) => {
 app.listen(PORT, () => {
   console.log(`Server running at http://localhost:${PORT}`);
 });
+
+//C:\Users\nischay\GitHub\Gemini-Chatbot\Assets\Dark-Mode.png
