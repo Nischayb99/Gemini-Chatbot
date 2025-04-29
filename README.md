@@ -14,7 +14,7 @@ A sleek and responsive AI chatbot web app powered by Google's Gemini models (`ge
 > (Add your screenshots in a `screenshots/` folder and update the links below)
 
 ![Gemini Chatbot Light Mode](./Assets/Dark-Mode.png)  
-![Gemini Chatbot Dark Mode](./Assets/light-Mode.png)
+![Gemini Chatbot Dark Mode](./Assets/Light-Mode.png)
 
 ## 🛠️ Tech Stack
 
@@ -87,4 +87,4 @@ Pull requests are welcome! For major changes, please open an issue first to disc
 
 > If you deploy it (on Render, Vercel, etc.), add the link here:
 
-**🔗 Live App:** [https://gemini-chatbot-ttxu.onrender.com](https://your-app-url.com)
+**🔗 Live App:** [https://gemini-chatbot-ttxu.onrender.com]
